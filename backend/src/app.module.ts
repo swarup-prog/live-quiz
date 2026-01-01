@@ -10,6 +10,7 @@ import { UsersModule } from './users/users.module';
 import { GroupsModule } from './groups/groups.module';
 import { QuizzesModule } from './quizzes/quizzes.module';
 import { QuizRoomsModule } from './quiz-rooms/quiz-rooms.module';
+import { RedisModule } from './redis/redis.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { QuizRoomsModule } from './quiz-rooms/quiz-rooms.module';
     GroupsModule,
     QuizzesModule,
     QuizRoomsModule,
+    RedisModule,
   ],
   controllers: [AppController],
   providers: [AppService],
